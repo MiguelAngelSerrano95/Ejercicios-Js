@@ -78,9 +78,9 @@ console.log(frutas);
 console.log(frutas[0],frutas[1],frutas[2],frutas[3],frutas[4]);
 
 //Ejercicio 13
-let soyMayorDeEdad = Number(prompt("Ingresa tu edad"))>= 18;
+// let soyMayorDeEdad = Number(prompt("Ingresa tu edad"))>= 18;
 
-console.log("Soy mayor de edad " + soyMayorDeEdad);
+// console.log("Soy mayor de edad " + soyMayorDeEdad);
 
 //Ejercicio 14
 let numeros = ["uno","dos","tres","cuatro","cinco"];
@@ -94,47 +94,68 @@ console.log(numeros[4]);
 //Ejercicio 15
 let familia=[{
     papa:"Jorge",
-    mama:"Marta",
-    hermano:"Jorge",
-    hermanoT:"Marcos",
-    hermanoU:"Joaquin"
-
 }, 
 {
-    tia:"Rebeca",
-    prima:"Luna",
-    tio:"Ariel",
-    primo:"Ivan",
-    primoS:"Lautaro",
-   
+    tia:"Rebeca",  
 },
 {
-    tioS:"Ismael",
-    tiaS:"veronica",
-    prima:"Debora",
-    primaS:"Carolina",
-    primot:"Roberto"
+    tio:"Ismael",
 },
 {
     abuelo:"Ricardo",
-    abuela:"Mirta",
-    abueloS:"Antonio",
-    abuelaS:"Elsa",
-    abueloB:"Roberto"
 },
 {
-    primog:"Jorge",
-    tiog:"Miguel",
-    hermanog:"Luis",
-    cuñada:"Soledad",
-    sobrino:"Gabriel"
-    
+    primo:"Jorge",
 }
 ]
-console.log(familia[0].papa,familia[1].tia,familia[2].tioS,familia[3].abuelo,familia[4].tiog);
+console.log(familia);
+console.log(familia[0].papa, familia[1].tia, familia[2].tio, familia[3].abuelo, familia[4].primo );
 
-//Ejercicio 16
-let textoAleatorio = frutas[1] +" es del numero "+numeros[4] +" para mi tio " +familia[4].tiog;
+// // Ejercicio 16 Crear una variable llamada textoAleatorio formando una frase con el segundo
+// elemento del array del punto 12, el cuarto elemento del punto 14 y el quinto objeto del
+// array del punto 15.
+
+
+let textoAleatorio = frutas[1] +" es del numero "+numeros[4] +" para mi tio " +familia[4].primo;
 console.log("El talle de la remera de color "+ textoAleatorio);
 
-//Ejercicio 17
+// Ejercicio 17. Utilizar prompt() para leer por pantalla mi edad y la edad de un compañero y mostrar
+// por consola los resultados de comparar los valores y guardarlos en variables llamadas
+// por ejemplo: edadesIguales, soyMayor, soyMenor, etc. y mostrar mensajes en consola
+// como los siguientes:
+// a. Mi edad es igual a la de mi compañero: false
+// b. Mi edad es mayor a la de mi compañero: true
+// c. Mi edad es menor a la de mi compañero: false
+
+// miEdad = prompt("ingresar mi edad:")
+// let edadDeMicompañero= prompt("ingresar la edad de mi compañero: ")
+
+// let edadesIguales= miEdad >= edadDeMicompañero 
+// console.log("mi edad es igual a la de mi compañero"+ edadesIguales);
+
+// let soyMayor = miEdad>edadDeMicompañero
+// console.log("Mi edad es mayor a la de mi compañero " + soyMayor);
+
+// let soyMenor = miEdad <= edadDeMicompañero
+// console.log("Mi edad es menor a la de mi compañero " + soyMenor);
+
+//Ejercicio 18 
+
+// let edadDeLaPersona= prompt("Ingrese su edad: ")
+// let alturaDeLaPersona= prompt("Ingrese su altura: ")
+
+// let puedeSubir= (edadDeLaPersona>6 && alturaDeLaPersona>=120) 
+// console.log( "Puede subir a la atraccion " + puedeSubir);
+
+//Ejercicio 19
+// Introducir por pantalla el pase de una persona el cual puede ser “VIP”, “NORMAL” o
+// “LIMITADO”, el saldo que dispone y guardarlos en variables separadas. En una variable
+// llamada puedePasar guardar el resultado de la operación resultante de si la persona
+// tiene pase “VIP” o si posee un saldo mayor a 1000. Mostrando un mensaje que diga: La
+// persona puede pasar y el resultado de la variable.
+
+let entradaDeLaPersona = prompt("Ingrese si eres VIP, NORMAL, LIMITADO: ")
+let saldoDeLaPersona= prompt("ingrese su saldo por favor: ")
+
+const puedePasar= (entradaDeLaPersona === "VIP" && saldoDeLaPersona> 1000)
+console.log("La persona puede pasar "+ puedePasar);
